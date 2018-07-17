@@ -40,7 +40,7 @@ public:
             return Allocator::alloc( ownSize + extra );
         }
 
-    public: // really want private, but g++ 4.0.3 throws a fit
+    private: // really want private, but g++ 4.0.3 throws a fit
         friend class PatriciaTree;
         Node * zero;
         Node * one;
